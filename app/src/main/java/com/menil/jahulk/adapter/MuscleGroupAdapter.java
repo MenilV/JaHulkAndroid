@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.menil.jahulk.R;
 import com.menil.jahulk.activity.ExcersiceActivity;
+import com.menil.jahulk.activity.VideoDemo;
 import com.menil.jahulk.bus.MuscleGroupEvent;
 import com.menil.jahulk.model.MuscleGroup;
 import com.squareup.picasso.Picasso;
@@ -67,8 +68,8 @@ public class MuscleGroupAdapter extends RecyclerView.Adapter<MuscleGroupAdapter.
 
         @Override
         public void onClick(View v) {
-            EventBus.getDefault().postSticky(data.get(getLayoutPosition()));
-            EventBus.getDefault().postSticky(new MuscleGroupEvent(new ArrayList<MuscleGroup>(data)));
+//            EventBus.getDefault().postSticky(data.get(getLayoutPosition()));
+//            EventBus.getDefault().postSticky(new MuscleGroupEvent(new ArrayList<MuscleGroup>(data)));
             mContext.startActivity(new Intent(mContext, ExcersiceActivity.class));
         }
     }

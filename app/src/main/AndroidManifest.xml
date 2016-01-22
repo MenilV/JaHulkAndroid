@@ -25,6 +25,13 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
         <activity
+            android:name=".activity.VideoDemo"
+            android:screenOrientation="sensorLandscape"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity
             android:name=".activity.ExcersiceActivity"
             android:label="@string/title_activity_excersice"
             android:parentActivityName=".activity.MainActivity"

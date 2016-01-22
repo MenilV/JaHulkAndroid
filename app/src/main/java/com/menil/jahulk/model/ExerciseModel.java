@@ -21,9 +21,25 @@ public class ExerciseModel {
     private Float weight;
     @DatabaseField
     private Long time; //in miliseconds
+    @DatabaseField(columnName = "group")
+    private MuscleGroup group;
 
     public ExerciseModel(){
 
+    }
+
+    public MuscleGroup getGroup() {
+        return group;
+    }
+
+    public ExerciseModel setGroup(MuscleGroup group) {
+        this.group = group;
+        return this;
+    }
+
+    public ExerciseModel(String name, MuscleGroup muscleGroup){
+        this.name=name;
+        this.group=muscleGroup;
     }
 
     public String getImage() {
