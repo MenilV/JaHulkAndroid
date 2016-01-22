@@ -1,15 +1,25 @@
 package com.menil.jahulk.model;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
 /**
  * Created by Menil V. on 22.1.2016 at com.menil.jahulk.model.
  */
+@DatabaseTable
 public class ExerciseModel {
 
+    @DatabaseField
     private String image;
+    @DatabaseField (id = true)
     private String name;
+    @DatabaseField
     private Integer sets;
+    @DatabaseField
     private Integer reps;
+    @DatabaseField
     private Float weight;
+    @DatabaseField
     private Long time; //in miliseconds
 
     public ExerciseModel(){
